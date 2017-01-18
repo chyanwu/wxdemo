@@ -1,0 +1,51 @@
+<view style="height: {{height}}px" class="container">
+    <view class="item item1">
+        <view class="pip"></view>
+    </view>
+    <view class="item item2">
+        <view class="pip"></view>
+        <view class="pip"></view>
+    </view>
+    <view class="item item3">
+        <view class="pip"></view>
+        <view class="pip"></view>
+        <view class="pip"></view>
+    </view>
+    <view class="item item4">
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+    </view>
+    <view class="item item5">
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+        <view class="column">
+            <view class="pip"></view>
+        </view>
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+    </view>
+    <view class="item item6">
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+        <view class="column">
+            <view class="pip"></view>
+            <view class="pip"></view>
+        </view>
+    </view>
+</view>

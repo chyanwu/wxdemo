@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/flex/flex",
+    "pages/todo/todo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "wechat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/flex/flex",
+      "text": "骰子",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png"
+    }, {
+      "pagePath": "pages/todo/todo",
+      "text": "todo",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png"
+    }]
+  }
+}

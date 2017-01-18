@@ -1,0 +1,74 @@
+/** 整体容器 **/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/** 骰子容器 **/
+.item {
+    background-color: #C0C0C0;
+    height: 140px;
+    width: 140px;
+    margin: 0 10px;
+    border-radius: 12%;
+	box-shadow: -5px -5px #CCCCCC;
+
+    display: flex;
+}
+
+/** 骰子 **/
+.pip {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 10px 10px;
+}
+
+/** 骰子1容器 **/
+.item1 {
+    justify-content: center;
+    align-items: center;
+}
+
+/** 骰子2容器 **/
+.item2 {
+    justify-content: space-around;
+}
+
+.item2 .pip:nth-child(2) {
+    align-self: flex-end;
+}
+
+/** 骰子3容器 **/
+.item3 .pip:nth-child(2){
+    align-self: center;
+}
+
+.item3 .pip:nth-child(3){
+    align-self: flex-end;
+}
+
+/** 骰子4容器 **/
+.item4 {
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.column {
+    display: flex;
+    flex-basis: 100%;
+	justify-content: space-around;
+}
+
+/** 骰子5容器 **/
+.item5 {
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/** 骰子6容器 **/
+.item6 {
+    flex-wrap: wrap;
+}

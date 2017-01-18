@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="line"></view>
+    <view class="header">
+        <image src="../../image/plus.png" class="plus" bindtap="createTodoItem"></image>
+        <input placeholder="请输入待办事项" class="new-todo" value="{{inputValue}}" bindinput="changeInputValue"/>
+    </view>
+    <block wx:if="{{todos.length}}">
+    	<view class="todo">
+		 	<view wx:for="{{todos}}" class="item" wx:key="{{index}}" bindtap="toggleTododItem" data-index="{{index}}">
+			  <icon type="{{item.completed?'success':'circle'}}" />
+			  <text class="name {{item.completed?'namecompleted':''}}">{{item.content}}</text>
+			  <icon type="clear" class="clear" catchtap="removeTodoItme" data-index="{{index}}" />
+			</view>
+		</view>
+		<view class="footer">
+			<text class="footerContent" bindtap="toggleAll">Toggle all</text>
+            <text class="footerContent">{{todoCount}} item left</text>
+            <text class="footerContent" bindtap="removeAll">Clear completed</text>
+		</view>
+	</block>
+	<block wx:else>
+	   <view class="empty">
+            <text class="title">Congratulations</text>
+            <text class="content">There is no reminding items!</text>
+        </view>
+	</block>
+</view>
